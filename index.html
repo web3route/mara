@@ -33,7 +33,6 @@
             align-items: center;
         }
 
-        /* 中心MARA元素 */
         .center-mara {
             position: absolute;
             width: 195px;
@@ -55,7 +54,6 @@
             transform: translate(-50%, -50%) scale(0.95);
         }
 
-        /* 五边形链接容器 */
         .pentagon-link {
             position: absolute;
             width: 100px;
@@ -79,9 +77,6 @@
             object-fit: contain;
         }
 
-        /* 位置定位 - 内嵌在六角星凹陷处，整体向左旋转30度 */
-        /* 使用角度和距离来精确定位 */
-        /* Team - 原顶部 (0度) → 旋转后330度 */
         .pentagon-link:nth-of-type(1) {
             top: 50%;
             left: 50%;
@@ -92,7 +87,6 @@
             transform: translate(-109%, -157%) scale(0.95);
         }
 
-        /* Income - 原右上 (60度) → 旋转后30度 */
         .pentagon-link:nth-of-type(2) {
             top: 50%;
             left: 50%;
@@ -103,7 +97,6 @@
             transform: translate(9%, -157%) scale(0.95);
         }
 
-        /* Download - 原右侧中间 (120度) → 旋转后90度 */
         .pentagon-link:nth-of-type(3) {
             top: 50%;
             left: 50%;
@@ -114,7 +107,6 @@
             transform: translate(68%, -50%) scale(0.95);
         }
 
-        /* Withdraw - 原右下 (180度) → 旋转后150度 */
         .pentagon-link:nth-of-type(4) {
             top: 50%;
             left: 50%;
@@ -125,7 +117,6 @@
             transform: translate(9%, 60%) scale(0.95);
         }
 
-        /* Manager - 原左下 (240度) → 旋转后210度 */
         .pentagon-link:nth-of-type(5) {
             top: 50%;
             left: 50%;
@@ -136,7 +127,6 @@
             transform: translate(-109%, 60%) scale(0.95);
         }
 
-        /* Recharge - 原左侧中间 (300度) → 旋转后270度 */
         .pentagon-link:nth-of-type(6) {
             top: 50%;
             left: 50%;
@@ -146,98 +136,14 @@
         .pentagon-link:nth-of-type(6):active {
             transform: translate(-168%, -50%) scale(0.95);
         }
-
-        /* 响应式调整 */
-        @media (max-width: 375px) {
-            .pentagon-link {
-                width: 65px;
-                height: 65px;
-            }
-
-            .center-mara {
-                width: 52vw;
-                height: 52vw;
-                max-width: 220px;
-                max-height: 220px;
-            }
-
-            /* 小屏幕调整距离 - 更紧贴六角星，旋转30度 */
-            .pentagon-link:nth-of-type(1) {
-                transform: translate(-132%, -191%);
-            }
-
-            .pentagon-link:nth-of-type(2) {
-                transform: translate(33%, -191%);
-            }
-
-            .pentagon-link:nth-of-type(3) {
-                transform: translate(68%, -50%);
-            }
-
-            .pentagon-link:nth-of-type(4) {
-                transform: translate(33%, 60%);
-            }
-
-            .pentagon-link:nth-of-type(5) {
-                transform: translate(-132%, 60%);
-            }
-
-            .pentagon-link:nth-of-type(6) {
-                transform: translate(-168%, -50%);
-            }
-        }
-
-        @media (min-width: 768px) {
-            .container {
-                width: 414px;
-                height: 896px;
-            }
-
-            .pentagon-link {
-                width: 70px;
-                height: 70px;
-            }
-
-            .center-mara {
-                width: 250px;
-                height: 250px;
-            }
-
-            /* 固定尺寸下的位置 - 紧贴六角星边缘，旋转30度 */
-            .pentagon-link:nth-of-type(1) {
-                transform: translate(-109%, -157%);
-            }
-
-            .pentagon-link:nth-of-type(2) {
-                transform: translate(9%, -157%);
-            }
-
-            .pentagon-link:nth-of-type(3) {
-                transform: translate(68%, -50%);
-            }
-
-            .pentagon-link:nth-of-type(4) {
-                transform: translate(9%, 60%);
-            }
-
-            .pentagon-link:nth-of-type(5) {
-                transform: translate(-109%, 60%);
-            }
-
-            .pentagon-link:nth-of-type(6) {
-                transform: translate(-168%, -50%);
-            }
-        }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 中心MARA元素 -->
         <div class="center-mara">
             <img src="img/mara.png" alt="MARA">
         </div>
 
-        <!-- 六个五边形链接 -->
         <a href="#" class="pentagon-link">
             <img src="img/team.png" alt="Team">
         </a>
